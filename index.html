@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PortfoliQ</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+  <header>
+    <h1 data-i18n="app_title">PortfoliQ</h1>
+
+    <div id="languageSwitcher">
+      <button class="lang-btn" data-lang="en">English</button>
+      <button class="lang-btn" data-lang="fr">Français</button>
+    </div>
+
+    <div id="header-tools">
+      <button id="exportBtn" class="tool-btn" data-action="export" data-section="app" data-i18n="export">Export</button>
+      <button id="clearBtn" class="tool-btn" data-action="clear" data-section="app" data-i18n="clear">Clear</button>
+      <input type="file" id="importFile" style="display:none">
+      <button id="importBtn" class="tool-btn" data-action="import" data-section="app" data-i18n="import">Import</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- STEPS -->
+    <nav id="stepNavigation" class="step-nav section-like">
+      <h2 data-i18n="steps">Steps</h2>
+      <div class="step-row">
+        <button data-step="step01" class="step-btn" data-i18n="step01">Step 1</button>
+        <button data-step="step02" class="step-btn" data-i18n="step02">Step 2</button>
+        <button data-step="step03" class="step-btn" data-i18n="step03">Step 3</button>
+        <button data-step="step04" class="step-btn" data-i18n="step04">Step 4</button>
+      </div>
+      <div class="step-row">
+        <button data-step="step05" class="step-btn" data-i18n="step05">Step 5</button>
+        <button data-step="step06" class="step-btn" data-i18n="step06">Step 6</button>
+      </div>
+      <div class="step-row">
+        <button data-step="step99" class="step-btn" data-i18n="step99">Show All Steps</button>
+        <button data-step="step00" class="step-btn" data-i18n="step00">Step 0</button>
+      </div>
+    </nav>
+
+    <div id="mainContent"></div>
+
+  </main>
+
+    <!-- SCRIPTS -->
+  <!-- 1. First: global config + portfolio --> 
+  <script src="js/first.js"></script>
+
+  <!-- 2. Libraries -->
+  <!-- https://github.com/MikeMcl/decimal.js -->
+  <!-- https://cdn.jsdelivr.net/npm/decimal.js@10.4.3/decimal.min.js -->
+  <script src="js/lib/decimal.min.js"></script>
+
+  <!-- https://github.com/chartjs/Chart.js -->
+  <!-- https://cdn.jsdelivr.net/npm/chart.js@4.5.0/dist/chart.umd.min.js -->
+  <script src="js/lib/chart.umd.min.js"></script>
+
+  <!-- 3. Helpers -->
+  <script src="js/helpers.dom.js"></script>
+  <script src="js/helpers.ui.js"></script>
+  <script src="js/helpers.actions.js"></script>
+  <script src="js/helpers.chart.js"></script>
+  <script src="js/helpers.logic.js"></script>
+  <script src="js/helpers.table.js"></script>
+  <script src="js/helpers.translations.js"></script>
+
+  <!-- 4. CRUD engine -->
+  <script src="js/crud.utils.js"></script>
+  <script src="js/crud.registry.js"></script>
+  <script src="js/crud.filters.js"></script>
+  <script src="js/crud.validation.js"></script>
+  <script src="js/crud.fields.js"></script>
+  <script src="js/crud.table.js"></script>
+  <script src="js/crud.core.js"></script>
+
+  <!-- 5. Snapshot -->
+  <script src="js/snapshot.charts.js"></script>
+  <script src="js/snapshot.compute.js"></script>
+  <script src="js/snapshot.filters.js"></script>
+  <script src="js/snapshot.render.js"></script>
+
+  <!-- 6. ETF Insights -->
+  <script src="js/etfinsights.calc.js"></script>
+  <script src="js/etfinsights.lookthrough.js"></script>
+  <script src="js/etfInsights.compute.js"></script>
+  <script src="js/etfInsights.render.js"></script>
+
+  <!-- 7. Schemas -->
+  <script src="js/schemas.persons.js"></script>
+  <script src="js/schemas.institutions.js"></script>
+  <script src="js/schemas.accounts.js"></script>
+  <script src="js/schemas.assets.js"></script>
+  <script src="js/schemas.assetAllocations.js"></script>
+  <script src="js/schemas.transactions.js"></script>
+  <script src="js/schemas.markets.js"></script>
+  <script src="js/schemas.snapshot.js"></script>
+  <script src="js/schemas.etfs.js"></script>
+  <script src="js/schemas.etfRelations.js"></script>
+  <script src="js/schemas.etfInsights.js"></script>
+  <script src="js/schemas.personTypes.js"></script>
+  <script src="js/schemas.accountTypes.js"></script>
+  <script src="js/schemas.transactionTypes.js"></script>
+  <script src="js/schemas.countries.js"></script>
+  <script src="js/schemas.currencies.js"></script>
+  <script src="js/schemas.assetClasses.js"></script>
+  <script src="js/schemas.assetRegions.js"></script>
+  <script src="js/schemas.assetFwts.js"></script>
+  <script src="js/schemas.websites.js"></script>
+  <script src="js/schemas.tips.js"></script>
+  <script src="js/schemas.translations.js"></script>
+
+  <!-- 8. Last: init + handlers -->
+  <script src="js/last.js"></script>
+
+</body>
+</html>

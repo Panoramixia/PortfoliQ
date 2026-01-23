@@ -1,0 +1,449 @@
+/* ------------------------------------------------------------
+   GENERAL LAYOUT
+------------------------------------------------------------ */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f5f7;
+  color: #222;
+}
+
+header {
+  background: #1e293b;
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-tools {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+main {
+  padding: 1.5rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  background: white;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ------------------------------------------------------------
+   LANGUAGE BUTTONS
+------------------------------------------------------------ */
+
+.lang-btn {
+  background-color: #4a6fa5; /* new blue */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.lang-btn:hover {
+  background: #5c82c0;      /* slightly darker on hover */
+}
+
+.lang-btn.active-lang {
+  background-color: #d98c00; /* new amber */
+  color: #fff;
+  border: 2px solid #cc7000;
+}
+
+/* ------------------------------------------------------------
+   STEPS
+------------------------------------------------------------ */
+
+.step-nav {
+  background: white;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1);
+}
+
+.step-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.step-row:last-child {
+  margin-bottom: 0;
+}
+
+.step-btn {
+  background-color: #4a6fa5; /* new blue */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.step-btn:hover {
+  background: #5c82c0;      /* slightly darker on hover */
+}
+
+.step-btn.active {
+  background-color: #d98c00; /* new amber */
+  color: #fff;
+  border: 2px solid #cc7000;
+}
+
+/* ------------------------------------------------------------
+   EXPORT / IMPORT BUTTONS
+------------------------------------------------------------ */
+
+.tool-btn {
+  background: #007bff;      /* same color as language buttons */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.tool-btn:hover {
+  background: #0069d9;
+}
+
+/* ------------------------------------------------------------
+   TABLES
+------------------------------------------------------------ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #f0f0f0;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background: #fafafa;
+}
+
+th[data-sort] {
+  cursor: pointer;
+}
+
+th[data-sort] .label,
+th[data-sort] .sort-indicator {
+  pointer-events: none;
+}
+
+th[data-sort] .sort-indicator::before {
+  content: "⇅";
+  opacity: 0.3;
+  margin-left: 4px;
+}
+
+tbody {
+  display: table-row-group !important;
+}
+
+/* ------------------------------------------------------------
+   FIELDS
+------------------------------------------------------------ */
+
+.required {
+  color: red;
+  margin-left: 2px;
+}
+
+.key {
+  color: blue;
+  margin-left: 2px;
+}
+
+/* ------------------------------------------------------------
+   ACTION BUTTONS (edit, save, delete, add)
+------------------------------------------------------------ */
+
+.action-btn {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 4px;
+  font-size: 0.9em;
+}
+
+.action-btn.edit {
+  background: #ffc107;
+  color: #000;
+}
+
+.action-btn.save {
+  background: #28a745;
+  color: white;
+}
+
+.action-btn.cancel {
+  background: #6c757d;
+  color: white;
+}
+
+.action-btn.delete {
+  background: #dc3545;
+  color: white;
+}
+
+.action-btn.add {
+  background: #007bff;
+  color: white;
+}
+
+/* ------------------------------------------------------------
+   INPUTS INSIDE TABLES
+------------------------------------------------------------ */
+
+table input,
+table select {
+  width: 95%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 70px;
+  resize: vertical;
+}
+
+/* ------------------------------------------------------------
+   SECTION TITLES
+------------------------------------------------------------ */
+
+.section-title {
+  font-size: 1.4em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* ------------------------------------------------------------
+   SNAPSHOT
+------------------------------------------------------------ */
+
+#snapshotSection table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.gain {
+  color: #0a8f0a;
+  font-weight: bold;
+}
+
+.loss {
+  color: #c62828;
+  font-weight: bold;
+}
+
+/* --- FILTER BAR WRAPPER --- */
+#marketsFilters, 
+#snapshotFilters, 
+#etfInsightsFilters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  padding: 16px;
+  background: #f7f9fc;
+  border: 1px solid #dce3ee;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* --- EACH FILTER GROUP --- */
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 200px;
+}
+
+/* --- LABELS --- */
+.filter-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #3a4a5a;
+}
+
+/* --- SELECT BOXES --- */
+.filter-group select {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #c7d2e2;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  min-height: 38px;
+}
+
+/* --- MULTISELECT HEIGHT --- */
+.filter-group select[multiple] {
+  height: 90px;
+}
+
+/* --- FOCUS STATE --- */
+.filter-group select:focus {
+  outline: none;
+  border-color: #4e79a7;
+  box-shadow: 0 0 0 2px rgba(78, 121, 167, 0.25);
+}
+
+/* --- OPTIONAL: HOVER EFFECT --- */
+.filter-group select:hover {
+  border-color: #9bb3d1;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.filter-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make number inputs match the height of marginal-rate number box */
+.filter-group input[type="number"] {
+  height: 38px;          /* adjust to match your marginal-rate number box */
+  padding: 6px 10px;
+  box-sizing: border-box;
+}
+
+/* Optional: make selects match too */
+.filter-group select {
+  height: 38px;
+  padding: 6px 10px;
+  box-sizing: border-box;
+}
+
+.marginal-rate-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.marginal-rate-control input[type="range"] {
+  flex: 1;              /* slider stretches horizontally */
+}
+
+.marginal-rate-control input[type="number"] {
+  width: 60px;
+  text-align: right;
+  padding: 4px;
+}
+
+.marginal-rate-control span {
+  font-weight: bold;
+  margin-left: 2px;     /* tiny spacing before the % sign */
+}
+
+/* Default: two charts per row */
+#snapshotChartRows > div {
+  display: flex;
+  gap: 20px;
+}
+
+#snapshotChartRows > div > div {
+  flex: 1;
+  max-width: 500px;
+  height: 400px;
+  display: flex;
+}
+
+/* When the window gets narrow, stack charts vertically */
+@media (max-width: 1100px) {
+  #snapshotChartRows > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #snapshotChartRows > div > div {
+    max-width: 90%;
+    width: 90%;
+    height: 300px;
+  }
+}
+
+/* Mobile layout: stack charts vertically */
+@media (max-width: 700px) {
+  #snapshotChartRows > div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #snapshotChartRows > div > div {
+    max-width: 90%;
+    width: 90%;
+    height: 300px;
+  }
+}
+
+.snapshot-chart-box {
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fafafa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* Mobile adjustments */
+@media (max-width: 700px) {
+  .snapshot-chart-box {
+    width: 100%;
+    max-width: none;
+  }
+}

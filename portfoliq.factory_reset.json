@@ -1,0 +1,1893 @@
+{
+  "config": {
+    "appName": "portfoliq",
+    "version": 0.01,
+    "language": "fr",
+    "currentStep": "step01",
+    "filters": {
+      "markets": {
+        "asset": "",
+        "year": ""
+      },
+      "snapshot": {
+        "persons": [
+          ""
+        ],
+        "accountTypes": [
+          "NON-REGISTERED",
+          "RRSP",
+          "TFSA"
+        ],
+        "classes": [
+          "EQUITIES",
+          "BONDS",
+          "CASH"
+        ],
+        "regions": [
+          "CAN",
+          "DEV",
+          "EMR",
+          "USA"
+        ]
+      },
+      "etfInsights": {
+        "currencies": [
+          "CAD"
+        ],
+        "parentEtf": "XEQT",
+        "investment": "1000000",
+        "accountType": "RRSP",
+        "marginalRate": 0.5,
+        "years": "10"
+      }
+    },
+    "sort": {
+      "persons": {
+        "column": null,
+        "asc": false
+      },
+      "institutions": {
+        "column": null,
+        "asc": true
+      },
+      "accounts": {
+        "column": null,
+        "asc": true
+      },
+      "assets": {
+        "column": null,
+        "asc": true
+      },
+      "assetAllocations": {
+        "column": null,
+        "asc": true
+      },
+      "transactions": {
+        "column": null,
+        "asc": true
+      },
+      "markets": {
+        "column": null,
+        "asc": true
+      },
+      "etfs": {
+        "column": null,
+        "asc": false
+      },
+      "etfRelations": {
+        "column": null,
+        "asc": true
+      },
+      "personTypes": {
+        "column": null,
+        "asc": true
+      },
+      "accountTypes": {
+        "column": null,
+        "asc": true
+      },
+      "transactionTypes": {
+        "column": null,
+        "asc": true
+      },
+      "countries": {
+        "column": null,
+        "asc": true
+      },
+      "currencies": {
+        "column": null,
+        "asc": true
+      },
+      "assetClasses": {
+        "column": null,
+        "asc": true
+      },
+      "assetRegions": {
+        "column": null,
+        "asc": true
+      },
+      "translations": {
+        "column": null,
+        "asc": true
+      },
+      "assetFwts": {
+        "column": null,
+        "asc": true
+      },
+      "websites": {
+        "column": null,
+        "asc": true
+      },
+      "tips": {
+        "column": null,
+        "asc": true
+      }
+    }
+  },
+  "portfolio": {
+    "persons": [],
+    "institutions": [],
+    "accounts": [],
+    "assets": [],
+    "assetAllocations": [],
+    "transactions": [],
+    "markets": [],
+    "etfs": [
+      {
+        "code": "CBIL",
+        "name": "Global X 0-3 Month T-Bill ETF",
+        "region": "CAN",
+        "mer": 0.0011,
+        "yield_dividend": 0,
+        "yield_interest": 0.0262,
+        "url": "https://www.globalx.ca/product/cbil",
+        "currency": "CAD",
+        "domicile": "CAN",
+        "key": "CBIL",
+        "class": "CASH"
+      },
+      {
+        "code": "EEM",
+        "name": "iShares MSCI Emerging Markets ETF",
+        "region": "EMR",
+        "mer": 0.0072,
+        "yield_dividend": 0.0218,
+        "yield_interest": 0,
+        "url": "https://www.ishares.com/us/products/239637/",
+        "currency": "USD",
+        "domicile": "USA",
+        "key": "EEM",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "IEFA",
+        "name": "iShares Core MSCI EAFE ETF",
+        "domicile": "USA",
+        "currency": "USD",
+        "region": "DEV",
+        "mer": 0.0007,
+        "yield_dividend": 0.0293,
+        "yield_interest": 0,
+        "url": "https://www.ishares.com/us/products/244049/",
+        "key": "IEFA",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "IIV",
+        "name": "iShares Core S&P 500 ETF",
+        "domicile": "USA",
+        "currency": "USD",
+        "region": "USA",
+        "mer": 0.0003,
+        "yield_dividend": 0.0113,
+        "yield_interest": 0,
+        "url": "https://www.ishares.com/us/products/239726/",
+        "key": "IIV",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "IJH",
+        "name": "iShares Core S&P Mid-Cap ETF",
+        "domicile": "USA",
+        "currency": "USD",
+        "region": "USA",
+        "mer": 0.0005,
+        "yield_dividend": 0.0125,
+        "yield_interest": 0,
+        "url": "https://www.ishares.com/us/products/239763/",
+        "key": "IJH",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "IJR",
+        "name": "iShares Core S&P Small-Cap ETF",
+        "domicile": "USA",
+        "currency": "USD",
+        "region": "USA",
+        "mer": 0.0006,
+        "yield_dividend": 0.019,
+        "yield_interest": 0,
+        "url": "https://www.ishares.com/us/products/239774/",
+        "key": "IJR",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "ITOT",
+        "name": "iShares Core S&P Total U.S. Stock Market ETF",
+        "domicile": "CAN",
+        "currency": "USD",
+        "region": "USA",
+        "mer": 0.0006,
+        "yield_dividend": 0.0109,
+        "yield_interest": 0,
+        "url": "https://www.ishares.com/us/products/239724/",
+        "key": "ITOT",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "VB",
+        "name": "Vanguard Small-Cap ETF",
+        "domicile": "USA",
+        "currency": "USD",
+        "region": "USA",
+        "mer": 0.0005,
+        "yield_dividend": 0.0136,
+        "yield_interest": 0,
+        "url": "https://investor.vanguard.com/investment-products/etfs/profile/vb",
+        "key": "VB",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "VCN",
+        "name": "Vanguard FTSE Canada All Cap Index ETF",
+        "region": "CAN",
+        "mer": 0.0006,
+        "yield_dividend": 0.0229,
+        "yield_interest": 0,
+        "url": "https://www.vanguard.ca/en/product/etf/equity/9561/vanguard-ftse-canada-all-cap-index-etf",
+        "currency": "CAD",
+        "domicile": "CAN",
+        "key": "VCN",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "VEE",
+        "name": "Vanguard FTSE Emerging Markets All Cap Index ETF",
+        "region": "EMR",
+        "mer": 0.0025,
+        "yield_dividend": 0.0227,
+        "yield_interest": 0,
+        "url": "https://www.vanguard.ca/en/product/etf/equity/9556/vanguard-ftse-emerging-markets-all-cap-index-etf",
+        "currency": "CAD",
+        "domicile": "CAN",
+        "key": "VEE",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "VEQT",
+        "name": "Vanguard All-Equity ETF",
+        "region": "CAN",
+        "mer": 0.0024,
+        "yield_dividend": 0.0131,
+        "yield_interest": 0,
+        "url": "https://www.vanguard.ca/en/product/etf/asset-allocation/9692/vanguard-all-equity-etf-portfolio",
+        "currency": "CAD",
+        "domicile": "CAN",
+        "key": "VEQT",
+        "class": "ALLINONE"
+      },
+      {
+        "code": "VIU",
+        "name": "Vanguard FTSE Developed All Cap ex North America Index ETF",
+        "region": "DEV",
+        "mer": 0.0023,
+        "yield_dividend": 0.0236,
+        "yield_interest": 0,
+        "url": "https://www.vanguard.ca/en/product/etf/equity/9569/vanguard-ftse-developed-all-cap-ex-north-america-index-etf",
+        "currency": "CAD",
+        "domicile": "CAN",
+        "key": "VIU",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "VUN",
+        "name": "Vanguard U.S. Total Market Index ETF",
+        "region": "USA",
+        "mer": 0.0017,
+        "yield_dividend": 0.0083,
+        "yield_interest": 0,
+        "url": "https://www.vanguard.ca/en/product/etf/equity/9557/vanguard-us-total-market-index-etf",
+        "currency": "CAD",
+        "domicile": "CAN",
+        "key": "VUN",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "VV",
+        "name": "Vanguard Large-Cap ETF",
+        "domicile": "USA",
+        "currency": "USD",
+        "region": "USA",
+        "mer": 0.0004,
+        "yield_dividend": 0.0106,
+        "yield_interest": 0,
+        "url": "https://investor.vanguard.com/investment-products/etfs/profile/vv",
+        "key": "VV",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "VWO",
+        "name": "Vanguard FTSE Emerging Markets ETF",
+        "domicile": "USA",
+        "currency": "USD",
+        "region": "EMR",
+        "mer": 0.0007,
+        "yield_dividend": 0.0265,
+        "yield_interest": 0,
+        "url": "https://investor.vanguard.com/investment-products/etfs/profile/vwo",
+        "key": "VWO",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "VXC",
+        "name": "Vanguard FTSE Global All Cap ex Canada Index ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "CAN",
+        "mer": 0.0022,
+        "yield_dividend": 0.0139,
+        "yield_interest": 0,
+        "url": "https://www.vanguard.ca/en/product/etf/equity/9548/vanguard-ftse-global-all-cap-ex-canada-index-etf",
+        "key": "VXC",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "XAW",
+        "name": "iShares Core MSCI All Country World ex Canada Index ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "CAN",
+        "mer": 0.0022,
+        "yield_dividend": 0.0129,
+        "yield_interest": 0,
+        "url": "https://www.blackrock.com/ca/investors/en/products/272108/",
+        "key": "XAW",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "XEC",
+        "name": "iShares Core MSCI Emerging Markets IMI Index ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "EMR",
+        "mer": 0.0028,
+        "yield_dividend": 0.0185,
+        "yield_interest": 0,
+        "url": "https://www.blackrock.com/ca/investors/en/products/251423/",
+        "key": "XEC",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "XEF",
+        "name": "iShares Core MSCI EAFE IMI Index ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "DEV",
+        "mer": 0.0023,
+        "yield_dividend": 0.0237,
+        "yield_interest": 0,
+        "url": "https://www.blackrock.com/ca/investors/en/products/251421/",
+        "key": "XEF",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "XEQT",
+        "name": "iShares Core Equity ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "CAN",
+        "mer": 0.002,
+        "yield_dividend": 0.0162,
+        "yield_interest": 0,
+        "url": "https://www.blackrock.com/ca/investors/en/products/309480/",
+        "key": "XEQT",
+        "class": "ALLINONE"
+      },
+      {
+        "code": "XIC",
+        "name": "iShares Core S&P/TSX Capped Composite Index ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "CAN",
+        "mer": 0.0006,
+        "yield_dividend": 0.0218,
+        "yield_interest": 0,
+        "url": "https://www.blackrock.com/ca/investors/en/products/239837/",
+        "key": "XIC",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "XTOT",
+        "name": "iShares Core S&P Total U.S. Stock Market Index ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "USA",
+        "mer": 0.0007,
+        "yield_dividend": 0.0109,
+        "yield_interest": 0,
+        "url": "https://www.blackrock.com/ca/investors/en/products/343519/",
+        "key": "XTOT",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "ZCN",
+        "name": "BMO S&P/TSX Capped Composite Index ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "CAN",
+        "mer": 0.0006,
+        "yield_dividend": 0.022,
+        "yield_interest": 0,
+        "url": "https://www.bmogam.com/ca-en/products/exchange-traded-fund/bmo-sp-tsx-capped-composite-index-etf-zcn/",
+        "key": "ZCN",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "ZCS",
+        "name": "BMO Short Corporate Bond Index ETF",
+        "region": "CAN",
+        "mer": 0.0011,
+        "yield_dividend": 0.0385,
+        "yield_interest": 0,
+        "url": "https://www.bmogam.com/ca-en/products/exchange-traded-fund/bmo-short-corporate-bond-index-etf-zcs",
+        "currency": "CAD",
+        "domicile": "CAN",
+        "key": "ZCS",
+        "class": "BONDS"
+      },
+      {
+        "code": "ZEA",
+        "name": "BMO MSCI EAFE Index ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "DEV",
+        "mer": 0.0022,
+        "yield_dividend": 0.0205,
+        "yield_interest": 0,
+        "url": "https://www.bmogam.com/ca-en/products/exchange-traded-fund/bmo-msci-eafe-index-etf-zea/",
+        "key": "ZEA",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "ZEM",
+        "name": "BMO MSCI Emerging Markets Index ETF",
+        "region": "CAN",
+        "mer": 0.0027,
+        "yield_dividend": 0.0224,
+        "yield_interest": 0,
+        "url": "https://www.bmogam.com/ca-en/products/exchange-traded-fund/bmo-msci-emerging-markets-index-etf-zem/",
+        "currency": "CAD",
+        "domicile": "CAN",
+        "key": "ZEM",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "ZEQT",
+        "name": "BMO All-Equity ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "CAN",
+        "mer": 0.002,
+        "yield_dividend": 0.0142,
+        "yield_interest": 0,
+        "url": "https://www.bmogam.com/ca-en/products/exchange-traded-fund/bmo-all-equity-etf-zeqt/",
+        "key": "ZEQT",
+        "class": "ALLINONE"
+      },
+      {
+        "code": "ZMID",
+        "name": "BMO MSCI Emerging Markets Index ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "USA",
+        "mer": 0.0016,
+        "yield_dividend": 0.0101,
+        "yield_interest": 0,
+        "url": "https://www.bmogam.com/ca-en/products/exchange-traded-fund/bmo-sp-us-mid-cap-index-etf-zmid/",
+        "key": "ZMID",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "ZSML",
+        "name": "BMO S&P US Small Cap Index ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "USA",
+        "mer": 0.0022,
+        "yield_dividend": 0.0111,
+        "yield_interest": 0,
+        "url": "https://www.bmogam.com/ca-en/products/exchange-traded-fund/bmo-sp-us-small-cap-index-etf-zsml/",
+        "key": "ZSML",
+        "class": "EQUITIES"
+      },
+      {
+        "code": "ZSP",
+        "name": "BMO S&P 500 Index ETF",
+        "domicile": "CAN",
+        "currency": "CAD",
+        "region": "USA",
+        "mer": 0.0009,
+        "yield_dividend": 0.0079,
+        "yield_interest": 0,
+        "url": "https://www.bmogam.com/ca-en/products/exchange-traded-fund/bmo-sp-500-index-etf-zsp/",
+        "key": "ZSP",
+        "class": "EQUITIES"
+      }
+    ],
+    "etfRelations": [
+      {
+        "parent_etf": "VEQT",
+        "child_etf": "VCN",
+        "weight": 0.3
+      },
+      {
+        "parent_etf": "VEQT",
+        "child_etf": "VEE",
+        "weight": 0.073
+      },
+      {
+        "parent_etf": "VEQT",
+        "child_etf": "VIU",
+        "weight": 0.17
+      },
+      {
+        "parent_etf": "VEQT",
+        "child_etf": "VUN",
+        "weight": 0.457
+      },
+      {
+        "parent_etf": "VXC",
+        "child_etf": "VV",
+        "weight": 0.5788,
+        "key": "VXC^VV"
+      },
+      {
+        "parent_etf": "VXC",
+        "child_etf": "VIU",
+        "weight": 0.249,
+        "key": "VXC^VIU"
+      },
+      {
+        "parent_etf": "VXC",
+        "child_etf": "VWO",
+        "weight": 0.1064,
+        "key": "VXC^VWO"
+      },
+      {
+        "parent_etf": "VXC",
+        "child_etf": "VB",
+        "weight": 0.0658,
+        "key": "VXC^VB"
+      },
+      {
+        "parent_etf": "XAW",
+        "child_etf": "IIV",
+        "weight": 0.5265,
+        "key": "XAW^IIV"
+      },
+      {
+        "parent_etf": "XAW",
+        "child_etf": "XEF",
+        "weight": 0.2295,
+        "key": "XAW^XEF"
+      },
+      {
+        "parent_etf": "XAW",
+        "child_etf": "XEC",
+        "weight": 0.12,
+        "key": "XAW^XEC"
+      },
+      {
+        "parent_etf": "XAW",
+        "child_etf": "ITOT",
+        "weight": 0.0737,
+        "key": "XAW^ITOT"
+      },
+      {
+        "parent_etf": "XAW",
+        "child_etf": "IJH",
+        "weight": 0.0321,
+        "key": "XAW^IJH"
+      },
+      {
+        "parent_etf": "XAW",
+        "child_etf": "IJR",
+        "weight": 0.0182,
+        "key": "XAW^IJR"
+      },
+      {
+        "parent_etf": "XEF",
+        "child_etf": "IEFA",
+        "weight": 0.0389,
+        "key": "XEF^IEFA"
+      },
+      {
+        "parent_etf": "XEQT",
+        "child_etf": "ITOT",
+        "weight": 0.2574,
+        "key": "XEQT^ITOT"
+      },
+      {
+        "parent_etf": "XEQT",
+        "child_etf": "XEC",
+        "weight": 0.0518,
+        "key": "XEQT^XEC"
+      },
+      {
+        "parent_etf": "XEQT",
+        "child_etf": "XEF",
+        "weight": 0.2453,
+        "key": "XEQT^XEF"
+      },
+      {
+        "parent_etf": "XEQT",
+        "child_etf": "XIC",
+        "weight": 0.2673,
+        "key": "XEQT^XIC"
+      },
+      {
+        "parent_etf": "XEQT",
+        "child_etf": "XTOT",
+        "weight": 0.1782,
+        "key": "XEQT^XTOT"
+      },
+      {
+        "parent_etf": "XTOT",
+        "child_etf": "ITOT",
+        "weight": 1,
+        "key": "XTOT^ITOT"
+      },
+      {
+        "parent_etf": "ZEA",
+        "child_etf": "IEFA",
+        "weight": 0.0817,
+        "key": "ZEA^IEFA"
+      },
+      {
+        "parent_etf": "ZEM",
+        "child_etf": "EEM",
+        "weight": 0.0645,
+        "key": "ZEM^EEM"
+      },
+      {
+        "parent_etf": "ZEQT",
+        "child_etf": "ZCN",
+        "weight": 0.2567,
+        "key": "ZEQT^ZCN"
+      },
+      {
+        "parent_etf": "ZEQT",
+        "child_etf": "ZEA",
+        "weight": 0.1644,
+        "key": "ZEQT^ZEA"
+      },
+      {
+        "parent_etf": "ZEQT",
+        "child_etf": "ZEM",
+        "weight": 0.0823,
+        "key": "ZEQT^ZEM"
+      },
+      {
+        "parent_etf": "ZEQT",
+        "child_etf": "ZMID",
+        "weight": 0.0247,
+        "key": "ZEQT^ZMID"
+      },
+      {
+        "parent_etf": "ZEQT",
+        "child_etf": "ZSML",
+        "weight": 0.0117,
+        "key": "ZEQT^ZSML"
+      },
+      {
+        "parent_etf": "ZEQT",
+        "child_etf": "ZSP",
+        "weight": 0.4602,
+        "key": "ZEQT^ZSP"
+      }
+    ],
+    "personTypes": [
+      {
+        "code": "SINGLE",
+        "en": "Single / Divorced / Widowed",
+        "fr": "Célibataire / Divorcé / Veuf",
+        "key": "SINGLE"
+      },
+      {
+        "code": "MARRIED",
+        "en": "Married / Common-law partner",
+        "fr": "Marié / Conjoint de fait",
+        "key": "MARRIED"
+      },
+      {
+        "code": "CHILD",
+        "en": "Child",
+        "fr": "Enfant",
+        "key": "CHILD"
+      }
+    ],
+    "accountTypes": [
+      {
+        "code": "NON-REGISTERED",
+        "en": "Non-registered account",
+        "fr": "Compte non enregistré",
+        "key": "NON-REGISTERED",
+        "is_tax_free": false,
+        "is_tax_deferred": false,
+        "is_capital_gain": true,
+        "is_usa_withholding_waived": false,
+        "color": "#e15759"
+      },
+      {
+        "code": "RRSP",
+        "en": "Registered Retirement Savings Plan - RRSP",
+        "fr": "Régime enregistré d'épargne-retraite - REER",
+        "key": "RRSP",
+        "is_tax_free": false,
+        "is_tax_deferred": true,
+        "is_capital_gain": false,
+        "is_usa_withholding_waived": true,
+        "color": "#4e79a7"
+      },
+      {
+        "code": "TFSA",
+        "en": "Tax-Free Savings Account - TFSA",
+        "fr": "Compte d'épargne libre d'impôt - CELI",
+        "key": "TFSA",
+        "is_tax_free": true,
+        "is_tax_deferred": false,
+        "is_capital_gain": false,
+        "is_usa_withholding_waived": false,
+        "color": "#76b7b2"
+      },
+      {
+        "code": "FHSA",
+        "en": "Tax-Free First Home Savings Account - FHSA",
+        "fr": "Compte d’épargne libre d’impôt pour l’achat d’une première propriété - CELIAPP",
+        "key": "FHSA",
+        "is_tax_free": true,
+        "is_tax_deferred": false,
+        "is_capital_gain": false,
+        "is_usa_withholding_waived": false,
+        "color": "#f28e2b"
+      },
+      {
+        "code": "RESP",
+        "en": "Registered Education Savings Plan - RESP",
+        "fr": "Régime enregistré d'épargne-études - REEE",
+        "key": "RESP",
+        "is_tax_free": false,
+        "is_tax_deferred": true,
+        "is_capital_gain": false,
+        "is_usa_withholding_waived": false,
+        "color": "#24b0cc"
+      },
+      {
+        "code": "VRSP",
+        "en": "Voluntary Registered Savings Plan - VRSP",
+        "fr": "Régime volontaire d'épargne-retraite - RVER",
+        "key": "VRSP",
+        "is_tax_free": false,
+        "is_tax_deferred": true,
+        "is_capital_gain": false,
+        "is_usa_withholding_waived": false,
+        "color": "#d4c416"
+      },
+      {
+        "code": "RDSP",
+        "en": "Registered Disability Savings Plan - RDSP",
+        "fr": "Régime enregistré d'épargne-invalidité - REEI",
+        "key": "RDSP",
+        "is_tax_free": false,
+        "is_tax_deferred": true,
+        "is_capital_gain": false,
+        "is_usa_withholding_waived": false,
+        "color": "#db14cb"
+      }
+    ],
+    "transactionTypes": [
+      {
+        "code": "BUY",
+        "en": "Buy",
+        "fr": "Achat",
+        "key": "BUY"
+      },
+      {
+        "code": "SELL",
+        "en": "Sell",
+        "fr": "Vente",
+        "key": "SELL"
+      },
+      {
+        "code": "REINVEST",
+        "en": "Reinvestment distribution",
+        "fr": "Distribution réinvestie",
+        "key": "REINVEST"
+      }
+    ],
+    "countries": [
+      {
+        "code": "CAN",
+        "en": "Canada",
+        "fr": "Canada",
+        "key": "CAN"
+      },
+      {
+        "code": "USA",
+        "en": "United States",
+        "fr": "États-Unis",
+        "key": "USA"
+      }
+    ],
+    "currencies": [
+      {
+        "code": "CAD",
+        "en": "Canadian dollar",
+        "fr": "Dollar canadien",
+        "symbol": "$",
+        "decimals": 2,
+        "key": "CAD"
+      },
+      {
+        "code": "USD",
+        "en": "US Dollar",
+        "fr": "Dollar américain",
+        "symbol": "$",
+        "decimals": 2,
+        "key": "USD"
+      },
+      {
+        "code": "EUR",
+        "en": "Euro",
+        "fr": "Euro",
+        "symbol": "€",
+        "decimals": 2,
+        "key": "EUR"
+      }
+    ],
+    "assetClasses": [
+      {
+        "code": "EQUITIES",
+        "en": "Equities (Stocks)",
+        "fr": "Actions",
+        "key": "EQUITIES",
+        "color": "#4e79a7"
+      },
+      {
+        "code": "BONDS",
+        "en": "Bonds",
+        "fr": "Obligations",
+        "key": "BONDS",
+        "color": "#e15759"
+      },
+      {
+        "code": "CASH",
+        "en": "Cash",
+        "fr": "Liquidités",
+        "key": "CASH",
+        "color": "#76b7b2"
+      },
+      {
+        "code": "REALASSETS",
+        "en": "Real Assets",
+        "fr": "Actifs réels",
+        "key": "REALASSETS",
+        "color": "#f28e2b"
+      },
+      {
+        "code": "ALTERNATIVE",
+        "en": "Alternative (Crypto, etc.)",
+        "fr": "Alternatifs (Crypto, etc.)",
+        "key": "ALTERNATIVE",
+        "color": "#5aa61c"
+      },
+      {
+        "code": "ALLINONE",
+        "en": "All in One",
+        "fr": "Tout en un",
+        "color": "#eeff00",
+        "key": "ALLINONE"
+      }
+    ],
+    "assetRegions": [
+      {
+        "code": "CAN",
+        "en": "Canada",
+        "en2": "Canada",
+        "fr": "Canada",
+        "fr2": "Canada",
+        "color": "#e15759",
+        "key": "CAN"
+      },
+      {
+        "code": "DEV",
+        "en": "Developed countries",
+        "en2": "United Kingdom, Japan, France, Germany, Switzerland, Australia, Netherlands, Sweden, Spain, Italy, etc.",
+        "fr": "Pays développés",
+        "fr2": "Royaume-Uni, Japon, France, Allemagne, Suisse, Australie, Pays-Bas, Suède, Espagne, Italie, etc.",
+        "color": "#76b7b2",
+        "key": "DEV"
+      },
+      {
+        "code": "EMR",
+        "en": "Emerging market countries",
+        "en2": "China, India, Brazil, Taiwan, South Africa, Thailand, Indonesia, Mexico, Malaysia, etc.",
+        "fr": "Pays des marchés émergents",
+        "fr2": "Chine, Inde, Brésil, Taïwan, Afrique du Sud, Thaïlande, Indonésie, Mexique, Malaisie, etc.",
+        "color": "#f28e2b",
+        "key": "EMR"
+      },
+      {
+        "code": "USA",
+        "en": "United States",
+        "en2": "United States",
+        "fr": "États-Unis",
+        "fr2": "États-Unis",
+        "color": "#4e79a7",
+        "key": "USA"
+      }
+    ],
+    "assetFwts": [
+      {
+        "code": "CAN",
+        "en": "No foreign withholding tax applies.",
+        "fr": "Aucune retenue d'impôt à la source étrangère ne s'applique.",
+        "fwt1": 0,
+        "fwt2": 0,
+        "key": "CAN"
+      },
+      {
+        "code": "DEV",
+        "en": "Foreign tax withheld at source – Second Tier only applies when the ETF is a fund of funds (e.g. VIU, VEQT). Directly held ETFs like XEF avoid the second tier.",
+        "fr": "L'impôt étranger retenu à la source - Deuxième niveau ne s'applique que lorsque le FNB est un fonds de fonds (par exemple, VIU, VEQT). Les FNB à détention directe comme XEF évitent le deuxième niveau.",
+        "fwt1": 0.15,
+        "fwt2": 0.1,
+        "key": "DEV"
+      },
+      {
+        "code": "EMR",
+        "en": "Treaties vary considerably between countries; 15% and 10% are standard modeling assumptions. Directly held ETFs like XEC avoid the second tier.",
+        "fr": "Les traités varient considérablement selon les pays ; 15 % et 10 % sont des hypothèses de modélisation standard. Les FNB à détention directe comme XEC évitent le deuxième niveau.",
+        "fwt1": 0.15,
+        "fwt2": 0.1,
+        "key": "EMR"
+      },
+      {
+        "code": "USA",
+        "en": "The RRSP exemption only applies when directly owning US-listed ETFs (for example, VTI). ETFs listed in Canada (e.g. VUN, VEQT) do not benefit from this exemption.",
+        "fr": "L'exemption REER s'applique uniquement lorsqu'on détient directement des FNB cotés aux États-Unis (par exemple, VTI). Les FNB cotés au Canada (par exemple, VUN, VEQT) ne bénéficient pas de cette exemption.",
+        "fwt1": 0.15,
+        "fwt2": 0,
+        "key": "USA"
+      }
+    ],
+    "websites": [
+      {
+        "module": "etfRelations",
+        "sequence": "1",
+        "en": "https://finance.yahoo.com/",
+        "fr": "https://fr.yahoo.com/",
+        "key": "etfRelations_1"
+      }
+    ],
+    "tips": [],
+    "translations": [
+      {
+        "code": "acb_per_unit",
+        "en": "ACB per unit",
+        "fr": "PBR par unité",
+        "key": "ACB_PER_UNIT"
+      },
+      {
+        "code": "acb_total",
+        "en": "Adjusted Cost Base",
+        "fr": "Prix ​​de base rajusté",
+        "key": "ACB_TOTAL"
+      },
+      {
+        "code": "account",
+        "en": "Account",
+        "fr": "Compte",
+        "key": "ACCOUNT"
+      },
+      {
+        "code": "account_type",
+        "en": "Account Type",
+        "fr": "Type de compte",
+        "key": "ACCOUNT_TYPE"
+      },
+      {
+        "code": "accounts",
+        "en": "Accounts",
+        "fr": "Comptes",
+        "key": "ACCOUNTS"
+      },
+      {
+        "code": "accounttype",
+        "en": "Account type",
+        "fr": "Type de compte",
+        "key": "ACCOUNTTYPE"
+      },
+      {
+        "code": "accounttypes",
+        "en": "Account types",
+        "fr": "Types de comptes",
+        "key": "ACCOUNTTYPES"
+      },
+      {
+        "code": "actions",
+        "en": "Actions",
+        "fr": "Actions",
+        "key": "ACTIONS"
+      },
+      {
+        "code": "active",
+        "en": "Active",
+        "fr": "Actif",
+        "key": "ACTIVE"
+      },
+      {
+        "code": "add_tooltip",
+        "en": "Add new item",
+        "fr": "Ajouter un élément",
+        "key": "ADD_TOOLTIP"
+      },
+      {
+        "code": "after_tax_growth",
+        "en": "After-tax Growth (X years)",
+        "fr": "Croissance après impôts (X années)",
+        "key": "AFTER_TAX_GROWTH"
+      },
+      {
+        "code": "after_tax_income",
+        "en": "After-tax Income (1 year)",
+        "fr": "Revenu après impôt (1 an)",
+        "key": "AFTER_TAX_INCOME"
+      },
+      {
+        "code": "after_tax_yield",
+        "en": "After-Tax Yield",
+        "fr": "Rendement après impôt",
+        "key": "AFTER_TAX_YIELD"
+      },
+      {
+        "code": "age",
+        "en": "Age",
+        "fr": "Âge",
+        "key": "AGE"
+      },
+      {
+        "code": "all_assets",
+        "en": "All Assets",
+        "fr": "Tous les actifs",
+        "key": "ALL_ASSETS"
+      },
+      {
+        "code": "all_years",
+        "en": "All Years",
+        "fr": "Toutes les années",
+        "key": "ALL_YEARS"
+      },
+      {
+        "code": "amount",
+        "en": "Amount",
+        "fr": "Montant",
+        "key": "AMOUNT"
+      },
+      {
+        "code": "app_title",
+        "en": "PortfoliQ - My Quebec Portfolio by Panoramixia",
+        "fr": "PortfoliQ - Mon Portefeuille Québécois par Panoramixia",
+        "key": "APP_TITLE"
+      },
+      {
+        "code": "asset",
+        "en": "Asset",
+        "fr": "Actif",
+        "key": "ASSET"
+      },
+      {
+        "code": "assetallocation",
+        "en": "Asset allocation",
+        "fr": "Allocation d'actifs",
+        "key": "ASSETALLOCATION"
+      },
+      {
+        "code": "assetallocations",
+        "en": "Asset allocations",
+        "fr": "Allocations d'actifs",
+        "key": "ASSETALLOCATIONS"
+      },
+      {
+        "code": "assetclass",
+        "en": "Asset class",
+        "fr": "Classe d'actifs",
+        "key": "ASSETCLASS"
+      },
+      {
+        "code": "assetclasses",
+        "en": "Asset classes",
+        "fr": "Classes d'actifs",
+        "key": "ASSETCLASSES"
+      },
+      {
+        "code": "assetfwt",
+        "en": "Asset Foreign Withholding Tax",
+        "fr": "Impôt d'actif étranger retenu à la source",
+        "key": "ASSETFWT"
+      },
+      {
+        "code": "assetfwts",
+        "en": "Asset Foreign Withholding Taxes",
+        "fr": "Impôts d'actifs étrangers retenu à la source",
+        "key": "ASSETFWTS"
+      },
+      {
+        "code": "assetregion",
+        "en": "Asset region",
+        "fr": "Région d'actif",
+        "key": "ASSETREGION"
+      },
+      {
+        "code": "assetregions",
+        "en": "Asset regions",
+        "fr": "Régions d'actif",
+        "key": "ASSETREGIONS"
+      },
+      {
+        "code": "assets",
+        "en": "Assets",
+        "fr": "Actifs",
+        "key": "ASSETS"
+      },
+      {
+        "code": "can",
+        "en": "Canada",
+        "fr": "Canada",
+        "key": "CAN"
+      },
+      {
+        "code": "cancel_tooltip",
+        "en": "Cancel editing",
+        "fr": "Annuler la modification",
+        "key": "CANCEL_TOOLTIP"
+      },
+      {
+        "code": "chart_after_tax_yield",
+        "en": "After-Tax Yield (%)",
+        "fr": "Rendement après impôts (%)",
+        "key": "CHART_AFTER_TAX_YIELD"
+      },
+      {
+        "code": "chart_etf_tax_drag",
+        "en": "ETF Tax Drag (%)",
+        "fr": "Frein fiscal des FNBs (%)",
+        "key": "CHART_ETF_TAX_DRAG"
+      },
+      {
+        "code": "chart_liquidation_account_type",
+        "en": "Liquidation by account type",
+        "fr": "Liquidation par type d'actifs",
+        "key": "CHART_LIQUIDATION_ACCOUNT_TYPE"
+      },
+      {
+        "code": "chart_liquidation_class",
+        "en": "Liquidation by asset class",
+        "fr": "Liquidation par classe d'actifs",
+        "key": "CHART_LIQUIDATION_CLASS"
+      },
+      {
+        "code": "chart_liquidation_person",
+        "en": "Liquidation by person",
+        "fr": "Liquidation par personne",
+        "key": "CHART_LIQUIDATION_PERSON"
+      },
+      {
+        "code": "chart_liquidation_region",
+        "en": "Liquidation by asset region",
+        "fr": "Liquidation par région d'actifs",
+        "key": "CHART_LIQUIDATION_REGION"
+      },
+      {
+        "code": "chart_market_account_type",
+        "en": "Market by account type",
+        "fr": "Marché par type d'actifs",
+        "key": "CHART_MARKET_ACCOUNT_TYPE"
+      },
+      {
+        "code": "chart_market_class",
+        "en": "Market by asset class",
+        "fr": "Marché par classe d'actifs",
+        "key": "CHART_MARKET_CLASS"
+      },
+      {
+        "code": "chart_market_person",
+        "en": "Market by person",
+        "fr": "Marché par personne",
+        "key": "CHART_MARKET_PERSON"
+      },
+      {
+        "code": "chart_market_region",
+        "en": "Market by asset region",
+        "fr": "Marché par région d'actifs",
+        "key": "CHART_MARKET_REGION"
+      },
+      {
+        "code": "child_etf",
+        "en": "Child ETF",
+        "fr": "FNB enfant",
+        "key": "CHILD_ETF"
+      },
+      {
+        "code": "child_etf_dummy",
+        "en": "Bought separately in proportion",
+        "fr": "Acheté séparément en proportion",
+        "key": "CHILD_ETF_DUMMY"
+      },
+      {
+        "code": "class",
+        "en": "Class",
+        "fr": "Classe",
+        "key": "CLASS"
+      },
+      {
+        "code": "clear",
+        "en": "Clear",
+        "fr": "Effacer",
+        "key": "CLEAR"
+      },
+      {
+        "code": "code",
+        "en": "Code",
+        "fr": "Code",
+        "key": "CODE"
+      },
+      {
+        "code": "color",
+        "en": "Color",
+        "fr": "Couleur",
+        "key": "COLOR"
+      },
+      {
+        "code": "compound_years",
+        "en": "Compound years",
+        "fr": "Années de croissance",
+        "key": "COMPOUND_YEARS"
+      },
+      {
+        "code": "confirm_clear",
+        "en": "Are you sure you want to clear all data?",
+        "fr": "Voulez-vous vraiment effacer toutes les données?",
+        "key": "CONFIRM_CLEAR"
+      },
+      {
+        "code": "countries",
+        "en": "Countries",
+        "fr": "Pays",
+        "key": "COUNTRIES"
+      },
+      {
+        "code": "country",
+        "en": "Country",
+        "fr": "Pays",
+        "key": "COUNTRY"
+      },
+      {
+        "code": "currencies",
+        "en": "Currencies",
+        "fr": "Devises",
+        "key": "CURRENCIES"
+      },
+      {
+        "code": "currency",
+        "en": "Currency",
+        "fr": "Devise",
+        "key": "CURRENCY"
+      },
+      {
+        "code": "currency_mismatch",
+        "en": "The holding currency does not match the account currency",
+        "fr": "La devise du titre ne correspond pas à la devise du compte",
+        "key": "CURRENCY_MISMATCH"
+      },
+      {
+        "code": "date",
+        "en": "Date",
+        "fr": "Date",
+        "key": "DATE"
+      },
+      {
+        "code": "decimals",
+        "en": "Decimals",
+        "fr": "Décimales",
+        "key": "DECIMALS"
+      },
+      {
+        "code": "delete_confirm_item",
+        "en": "Are you sure you want to delete this item?",
+        "fr": "Voulez-vous vraiment supprimer cet élément ?",
+        "key": "DELETE_CONFIRM_ITEM"
+      },
+      {
+        "code": "delete_tooltip",
+        "en": "Delete this item",
+        "fr": "Supprimer cet élément",
+        "key": "DELETE_TOOLTIP"
+      },
+      {
+        "code": "details",
+        "en": "Details",
+        "fr": "Détaillé",
+        "key": "DETAILS"
+      },
+      {
+        "code": "dev",
+        "en": "Developed market",
+        "fr": "Marchés développés",
+        "key": "DEV"
+      },
+      {
+        "code": "dob",
+        "en": "Date of Birth",
+        "fr": "Date de naissance",
+        "key": "DOB"
+      },
+      {
+        "code": "domicile",
+        "en": "Domicile",
+        "fr": "Domicile",
+        "key": "DOMICILE"
+      },
+      {
+        "code": "duplicate_key",
+        "en": "This key already exists",
+        "fr": "Cette clé existe déjà",
+        "key": "DUPLICATE_KEY"
+      },
+      {
+        "code": "edit_tooltip",
+        "en": "Edit this item",
+        "fr": "Modifier cet élément",
+        "key": "EDIT_TOOLTIP"
+      },
+      {
+        "code": "emr",
+        "en": "Emerging market",
+        "fr": "Marchés émergents",
+        "key": "EMR"
+      },
+      {
+        "code": "en",
+        "en": "English",
+        "fr": "English",
+        "key": "EN"
+      },
+      {
+        "code": "etf",
+        "en": "Exchange-Traded Fund (ETF)",
+        "fr": "Fonds négocié en bourse (FNB)",
+        "key": "ETF"
+      },
+      {
+        "code": "etf_relation_both_same",
+        "en": "An ETF cannot be its own child.",
+        "fr": "Un FNB ne peut pas être son propre enfant",
+        "key": "ETF_RELATION_BOTH_SAME"
+      },
+      {
+        "code": "etf_relation_loop",
+        "en": "This relation creates a loop between ETFs.",
+        "fr": "Cette relation crée une boucle entre les FNB",
+        "key": "ETF_RELATION_LOOP"
+      },
+      {
+        "code": "etfinsight",
+        "en": "ETF Insight",
+        "fr": "Aperçu du FNB",
+        "key": "ETFINSIGHT"
+      },
+      {
+        "code": "etfinsights",
+        "en": "ETF Insights",
+        "fr": "Aperçu des FNBs",
+        "key": "ETFINSIGHTS"
+      },
+      {
+        "code": "etfrelation",
+        "en": "Fund of funds ETF",
+        "fr": "FNB Fond de fonds",
+        "key": "ETFRELATION"
+      },
+      {
+        "code": "etfrelations",
+        "en": "Funds of funds ETFs",
+        "fr": "FNBs Fonds de fonds",
+        "key": "ETFRELATIONS"
+      },
+      {
+        "code": "etfs",
+        "en": "Exchange-Traded Funds (ETFs)",
+        "fr": "Fonds négociés en bourse (FNBs)",
+        "key": "ETFS"
+      },
+      {
+        "code": "export",
+        "en": "Export",
+        "fr": "Exporter",
+        "key": "EXPORT"
+      },
+      {
+        "code": "field",
+        "en": "Field",
+        "fr": "Champ",
+        "key": "FIELD"
+      },
+      {
+        "code": "fr",
+        "en": "Français",
+        "fr": "Français",
+        "key": "FR"
+      },
+      {
+        "code": "fwt1",
+        "en": "% First-Layer Foreign Withholding Tax",
+        "fr": "% Impôt étranger retenu à la source - Premier niveau",
+        "key": "FWT1"
+      },
+      {
+        "code": "fwt2",
+        "en": "% Second-Layer Foreign Withholding Tax",
+        "fr": "% Impôt étranger retenu à la source - Deuxième niveau",
+        "key": "FWT2"
+      },
+      {
+        "code": "import",
+        "en": "Import",
+        "fr": "Importer",
+        "key": "IMPORT"
+      },
+      {
+        "code": "import_error",
+        "en": "Invalid file format",
+        "fr": "Format de fichier invalide",
+        "key": "IMPORT_ERROR"
+      },
+      {
+        "code": "import_success",
+        "en": "Data imported successfully",
+        "fr": "Importation réussie",
+        "key": "IMPORT_SUCCESS"
+      },
+      {
+        "code": "inactive",
+        "en": "Inactive",
+        "fr": "Inactif",
+        "key": "INACTIVE"
+      },
+      {
+        "code": "institution",
+        "en": "Institution",
+        "fr": "Institution",
+        "key": "INSTITUTION"
+      },
+      {
+        "code": "institutions",
+        "en": "Institutions",
+        "fr": "Institutions",
+        "key": "INSTITUTIONS"
+      },
+      {
+        "code": "invalid_url",
+        "en": "Please enter a valid URL.",
+        "fr": "Veuillez saisir une URL valide",
+        "key": "INVALID_URL"
+      },
+      {
+        "code": "investment",
+        "en": "Investment",
+        "fr": "Investissement",
+        "key": "INVESTMENT"
+      },
+      {
+        "code": "is_capital_gain",
+        "en": "Capital gain tax on sale",
+        "fr": "Impôt sur le gain en capital",
+        "key": "IS_CAPITAL_GAIN"
+      },
+      {
+        "code": "is_tax_deferred",
+        "en": "Deferral of tax on withdrawal",
+        "fr": "Report de l’impôt au retrait",
+        "key": "IS_TAX_DEFERRED"
+      },
+      {
+        "code": "is_tax_free",
+        "en": "Tax free",
+        "fr": "Libre d'impôt",
+        "key": "IS_TAX_FREE"
+      },
+      {
+        "code": "is_usa_withholding_waived",
+        "en": "USA withholding waived",
+        "fr": "Retenue à la source levée États-Unis",
+        "key": "IS_USA_WITHHOLDING_WAIVED"
+      },
+      {
+        "code": "key_cannot_change",
+        "en": "Key cannot be changed",
+        "fr": "La clé ne peut pas être modifiée",
+        "key": "KEY_CANNOT_CHANGE"
+      },
+      {
+        "code": "liquidation",
+        "en": "Liquidation",
+        "fr": "Liquidation",
+        "key": "LIQUIDATION"
+      },
+      {
+        "code": "marginal_rate",
+        "en": "Marginal rate %",
+        "fr": "% Taux marginal",
+        "key": "MARGINAL_RATE"
+      },
+      {
+        "code": "market",
+        "en": "Market",
+        "fr": "Marché",
+        "key": "MARKET"
+      },
+      {
+        "code": "markets",
+        "en": "Markets",
+        "fr": "Marchés",
+        "key": "MARKETS"
+      },
+      {
+        "code": "mer",
+        "en": "Management expense ratio (MER)",
+        "fr": "Ratio des frais de gestion (RFG)",
+        "key": "MER"
+      },
+      {
+        "code": "module",
+        "en": "Module",
+        "fr": "Module",
+        "key": "MODULE"
+      },
+      {
+        "code": "name",
+        "en": "Name",
+        "fr": "Nom",
+        "key": "NAME"
+      },
+      {
+        "code": "non_registered",
+        "en": "Non-Registered",
+        "fr": "Non-enregistré",
+        "key": "NON_REGISTERED"
+      },
+      {
+        "code": "notes",
+        "en": "Notes",
+        "fr": "Notes",
+        "key": "NOTES"
+      },
+      {
+        "code": "parent_etf",
+        "en": "Parent ETF",
+        "fr": "FNB parent",
+        "key": "PARENT_ETF"
+      },
+      {
+        "code": "parent_etf_all",
+        "en": "-- All ETFs (default) --",
+        "fr": "-- Tous les FNBs (défaut) --",
+        "key": "PARENT_ETF_ALL"
+      },
+      {
+        "code": "percent_invalid",
+        "en": "Percent must be between 0% and 100%",
+        "fr": "Le pourcentage doit être compris entre 0 % et 100 %",
+        "key": "PERCENT_INVALID"
+      },
+      {
+        "code": "person",
+        "en": "Person",
+        "fr": "Personne",
+        "key": "PERSON"
+      },
+      {
+        "code": "persons",
+        "en": "Persons",
+        "fr": "Personnes",
+        "key": "PERSONS"
+      },
+      {
+        "code": "persontype",
+        "en": "Person type",
+        "fr": "Type de personne",
+        "key": "PERSONTYPE"
+      },
+      {
+        "code": "persontypes",
+        "en": "Person types",
+        "fr": "Types de personnes",
+        "key": "PERSONTYPES"
+      },
+      {
+        "code": "please_fill_fields",
+        "en": "Please fill in all required fields before adding an item",
+        "fr": "Veuillez remplir tous les champs obligatoires avant d'ajouter un élément",
+        "key": "PLEASE_FILL_FIELDS"
+      },
+      {
+        "code": "price",
+        "en": "Price",
+        "fr": "Prix",
+        "key": "PRICE"
+      },
+      {
+        "code": "quantity",
+        "en": "Quantity",
+        "fr": "Quantité",
+        "key": "QUANTITY"
+      },
+      {
+        "code": "realized_gain",
+        "en": "Realized gain",
+        "fr": "Gain réalisé",
+        "key": "REALIZED_GAIN"
+      },
+      {
+        "code": "region",
+        "en": "Region",
+        "fr": "Région",
+        "key": "REGION"
+      },
+      {
+        "code": "regions",
+        "en": "Regions",
+        "fr": "Régions",
+        "key": "REGIONS"
+      },
+      {
+        "code": "save_tooltip",
+        "en": "Save changes",
+        "fr": "Enregistrer les modifications",
+        "key": "SAVE_TOOLTIP"
+      },
+      {
+        "code": "sequence",
+        "en": "Sequence",
+        "fr": "Séquence",
+        "key": "SEQUENCE"
+      },
+      {
+        "code": "snapshot",
+        "en": "Current snapshot of active options",
+        "fr": "Instantané actuel des options actives",
+        "key": "SNAPSHOT"
+      },
+      {
+        "code": "step00",
+        "en": "Setup tables",
+        "fr": "Tableaux de configuration",
+        "key": "STEP00"
+      },
+      {
+        "code": "step01",
+        "en": "Step 1 - Current informations",
+        "fr": "Étape 1 - Informations actuelles",
+        "key": "STEP01"
+      },
+      {
+        "code": "step02",
+        "en": "Step 2 - Transactions",
+        "fr": "Étape 2 - Transactions",
+        "key": "STEP02"
+      },
+      {
+        "code": "step03",
+        "en": "Step 3 - Markets",
+        "fr": "Étape 3 - Marchés",
+        "key": "STEP03"
+      },
+      {
+        "code": "step04",
+        "en": "Step 4 - Current snapshot",
+        "fr": "Étape 4 - Instantané actuel",
+        "key": "STEP04"
+      },
+      {
+        "code": "step05",
+        "en": "Step 5 - ETFs informations",
+        "fr": "Étape 5 - Informations des FNBs",
+        "key": "STEP05"
+      },
+      {
+        "code": "step06",
+        "en": "Step 6 - ETFs Insights",
+        "fr": "Étape 6 - Aperçu des FNBs",
+        "key": "STEP06"
+      },
+      {
+        "code": "step99",
+        "en": "All steps",
+        "fr": "Toutes les étapes",
+        "key": "STEP99"
+      },
+      {
+        "code": "steps",
+        "en": "Steps",
+        "fr": "Étapes",
+        "key": "STEPS"
+      },
+      {
+        "code": "summary",
+        "en": "Summary",
+        "fr": "Sommaire",
+        "key": "SUMMARY"
+      },
+      {
+        "code": "symbol",
+        "en": "Symbol",
+        "fr": "Symbole",
+        "key": "SYMBOL"
+      },
+      {
+        "code": "tax_drag",
+        "en": "Tax drag",
+        "fr": "Frein fiscal",
+        "key": "TAX_DRAG"
+      },
+      {
+        "code": "tax_drag_amount",
+        "en": "Tax drag amount",
+        "fr": "Montant du frein fiscal",
+        "key": "TAX_DRAG_AMOUNT"
+      },
+      {
+        "code": "tip",
+        "en": "Tip",
+        "fr": "Conseil",
+        "key": "TIP"
+      },
+      {
+        "code": "tips",
+        "en": "Tips",
+        "fr": "Conseils",
+        "key": "TIPS"
+      },
+      {
+        "code": "transaction",
+        "en": "Transaction",
+        "fr": "Transaction",
+        "key": "TRANSACTION"
+      },
+      {
+        "code": "transactions",
+        "en": "Transactions",
+        "fr": "Transactions",
+        "key": "TRANSACTIONS"
+      },
+      {
+        "code": "transactiontype",
+        "en": "Transaction type",
+        "fr": "Type de transaction",
+        "key": "TRANSACTIONTYPE"
+      },
+      {
+        "code": "transactiontypes",
+        "en": "Transaction types",
+        "fr": "Types de transaction",
+        "key": "TRANSACTIONTYPES"
+      },
+      {
+        "code": "translations",
+        "en": "Translations",
+        "fr": "Traductions",
+        "key": "TRANSLATIONS"
+      },
+      {
+        "code": "type",
+        "en": "Type",
+        "fr": "Type",
+        "key": "TYPE"
+      },
+      {
+        "code": "units",
+        "en": "Units",
+        "fr": "Unités",
+        "key": "UNITS"
+      },
+      {
+        "code": "unrealized_gain",
+        "en": "Unrealized gain",
+        "fr": "Gain non réalisé",
+        "key": "UNREALIZED_GAIN"
+      },
+      {
+        "code": "url",
+        "en": "Website",
+        "fr": "Site web",
+        "key": "URL"
+      },
+      {
+        "code": "usa",
+        "en": "United States",
+        "fr": "États-Unis",
+        "key": "USA"
+      },
+      {
+        "code": "website",
+        "en": "Website",
+        "fr": "Site web",
+        "key": "WEBSITE"
+      },
+      {
+        "code": "websites",
+        "en": "Websites",
+        "fr": "Sites web",
+        "key": "WEBSITES"
+      },
+      {
+        "code": "weight",
+        "en": "% Weight",
+        "fr": "% Poids",
+        "key": "WEIGHT"
+      },
+      {
+        "code": "year",
+        "en": "Year",
+        "fr": "Année",
+        "key": "YEAR"
+      },
+      {
+        "code": "yield",
+        "en": "Yield",
+        "fr": "Rendement",
+        "key": "YIELD"
+      },
+      {
+        "code": "yield_dividend",
+        "en": "12 month dividend yield",
+        "fr": "Rendement du dividende sur 12 mois",
+        "key": "YIELD_DIVIDEND"
+      },
+      {
+        "code": "yield_interest",
+        "en": "12 month interest yield",
+        "fr": "Rendement des intérêts sur 12 mois",
+        "key": "YIELD_INTEREST"
+      },
+      {
+        "code": "cannot_delete_in_use",
+        "en": "Cannot delete this item as it is already used elsewhere. Please delete all the rows using this item, then you will be able to delete it.",
+        "fr": "Impossible de supprimer cet élément car il est déjà utilisé ailleurs. Veuillez supprimer toutes les lignes utilisant cet élément, vous pourrez ensuite le supprimer.",
+        "key": "CANNOT_DELETE_IN_USE"
+      },
+      {
+        "code": "en2",
+        "en": "Countries",
+        "fr": "Countries",
+        "key": "EN2"
+      },
+      {
+        "code": "FR2",
+        "en": "Pays",
+        "fr": "Pays",
+        "key": "FR2"
+      }
+    ]
+  }
+}
