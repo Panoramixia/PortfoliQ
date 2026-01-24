@@ -15,7 +15,8 @@ Crud.Registry.register("assetRegions", {
   // Other tables that reference assetRegions
   referencedBy: [
     { module: "etfs", field: "assetRegion" },
-    { module: "assetFwts", field: "assetRegion" }
+    { module: "assetFwts", field: "assetRegion" },
+    { module: "assetAllocations", field: "region" }
   ],
 
   fields: [

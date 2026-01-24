@@ -62,12 +62,12 @@ Crud.Registry.register("assetAllocations", {
       required: true,
       options: () =>
         portfolio.assetRegions.map(r => ({
-          label: r.name,
+          label: r.code,
           value: r.key
         })),
       display: aa => {
         const r = portfolio.assetRegions.find(x => x.key === aa.region);
-        return r ? r.name : "";
+        return r ? r.code : "";
       }
     },
 
