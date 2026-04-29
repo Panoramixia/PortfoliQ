@@ -24,6 +24,9 @@
 | Transactions | Transactions |
 | Markets | Marchés |
 | Snapshot | Instantané actuel |
+| Rebalance Goals | Objectifs de rééquilibrage |
+| Rebalance Drifts | Dérives de rééquilibrage |
+| Rebalance Rules | Règles de rééquilibrage |
 | Exchange-Traded Funds (ETFs) | Fonds négociés en bourse (FNBs) |
 | Funds of funds ETFs | FNBs Fonds de fonds |
 | ETF Insights | Aperçu des FNBs |

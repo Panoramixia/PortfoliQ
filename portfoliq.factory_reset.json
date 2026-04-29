@@ -34,11 +34,18 @@
         "currencies": [
           "CAD"
         ],
-        "parentEtf": "XEQT",
-        "investment": "1000000",
-        "accountType": "RRSP",
+        "parent": "",
+        "amount": 0,
+        "years": "20",
         "marginalRate": 0.5,
-        "years": "10"
+        "investment": "100000",
+        "parentEtf": "XEQT",
+        "accountTypes": "RRSP"
+      },
+      "rebalanceDrifts": {
+        "persons": [
+          ""
+        ]
       }
     },
     "sort": {
@@ -132,6 +139,9 @@
     "assetAllocations": [],
     "transactions": [],
     "markets": [],
+    "rebalanceGoals": [],
+    "rebalanceDrifts": [],
+    "rebalanceRules": [],
     "etfs": [
       {
         "code": "CBIL",
@@ -382,7 +392,7 @@
       },
       {
         "code": "XEQT",
-        "name": "iShares Core Equity ETF",
+        "name": "iShares Core Equity ETF Portfolio",
         "domicile": "CAN",
         "currency": "CAD",
         "region": "CAN",
@@ -991,7 +1001,7 @@
       {
         "code": "acb_total",
         "en": "Adjusted Cost Base",
-        "fr": "Prix ​​de base rajusté",
+        "fr": "Prix de base rajusté",
         "key": "ACB_TOTAL"
       },
       {
@@ -1710,14 +1720,14 @@
       },
       {
         "code": "step05",
-        "en": "Step 5 - ETFs informations",
-        "fr": "Étape 5 - Informations des FNBs",
+        "en": "Step 5 - Rebalance informations",
+        "fr": "Étape 5 - Informations de rééquilibrage",
         "key": "STEP05"
       },
       {
         "code": "step06",
-        "en": "Step 6 - ETFs Insights",
-        "fr": "Étape 6 - Aperçu des FNBs",
+        "en": "Step 6 - Rebalance",
+        "fr": "Étape 6 - Rééquilibrage",
         "key": "STEP06"
       },
       {
@@ -1883,10 +1893,118 @@
         "key": "EN2"
       },
       {
-        "code": "FR2",
+        "code": "fr2",
         "en": "Pays",
         "fr": "Pays",
         "key": "FR2"
+      },
+      {
+        "code": "step07",
+        "en": "Step 7 - ETFs informations",
+        "fr": "Étape 7 - Informations des FNBs",
+        "key": "STEP07"
+      },
+      {
+        "code": "rebalanceGoals",
+        "en": "Rebalance goals",
+        "fr": "Objectifs de rééquilibrage",
+        "key": "REBALANCEGOALS"
+      },
+      {
+        "code": "rebalanceGoal",
+        "en": "Rebalance goal",
+        "fr": "Objectif de rééquilibrage",
+        "key": "REBALANCEGOAL"
+      },
+      {
+        "code": "step08",
+        "en": "Step 8 - ETFs Insights",
+        "fr": "Étape 8 - Aperçu des FNBs",
+        "key": "STEP08"
+      },
+      {
+        "code": "action",
+        "en": "Action",
+        "fr": "Action",
+        "key": "ACTION"
+      },
+      {
+        "code": "driftpct",
+        "en": "Drift %",
+        "fr": "% Dérive",
+        "key": "DRIFTPCT"
+      },
+      {
+        "code": "goalpct",
+        "en": "Goal %",
+        "fr": "% Objectif",
+        "key": "GOALPCT"
+      },
+      {
+        "code": "liquidationpct",
+        "en": "Current liquidation %",
+        "fr": "% Actuel de liquidation",
+        "key": "LIQUIDATIONPCT"
+      },
+      {
+        "code": "missing_goal",
+        "en": "Missing Goal",
+        "fr": "Objectif manquant",
+        "key": "MISSING_GOAL"
+      },
+      {
+        "code": "buy",
+        "en": "Buy",
+        "fr": "Achat",
+        "key": "BUY"
+      },
+      {
+        "code": "sell",
+        "en": "Sell",
+        "fr": "Vente",
+        "key": "SELL"
+      },
+      {
+        "code": "balanced",
+        "en": "Balanced",
+        "fr": "Équilibré",
+        "key": "BALANCED"
+      },
+      {
+        "code": "rebalanceDrifts",
+        "en": "Rebalance drifts",
+        "fr": "Dérives de rééquilibrage",
+        "key": "REBALANCEDRIFTS"
+      },
+      {
+        "code": "rebalanceDrift",
+        "en": "Rebalance drift",
+        "fr": "Dérive de rééquilibrage",
+        "key": "REBALANCEDRIFT"
+      },
+      {
+        "code": "rebalanceRules",
+        "en": "Rebalance rules",
+        "fr": "Règles de rééquilibrage",
+        "key": "REBALANCERULES"
+      },
+      {
+        "code": "priority",
+        "en": "Priority",
+        "fr": "Priority",
+        "key": "PRIORITY"
+      },
+      {
+        "code": "maxSell",
+        "en": "Maximum sell",
+        "fr": "Maximum vente",
+        "key": "MAXSELL"
+      },
+      {
+        "code": "maxBuy",
+        "en": "Maximum buy",
+        "fr": "Maximum achat",
+        "key": "MAXBUY"
       }
     ]
   }
