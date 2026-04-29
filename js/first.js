@@ -17,8 +17,10 @@ window.stepModules = {
   step02: ["transactions"],
   step03: ["markets"],
   step04: ["snapshot"],
-  step05: ["etfs", "etfRelations"],
-  step06: ["etfInsights"],
+  step05: ["rebalanceGoals"],
+  step06: ["rebalanceDrifts", "rebalanceRules"],
+  step07: ["etfs", "etfRelations"],
+  step08: ["etfInsights"],
   step00: ["personTypes", "accountTypes", "transactionTypes", "countries", "currencies", "assetClasses", "assetRegions", "assetFwts", "websites", "tips", "translations"]
 };
 
@@ -54,6 +56,9 @@ window.config = {
       accountTypes: [],
       classes: [],
       regions: []
+    },
+    rebalanceDrifts: {
+      persons: []
     },
     etfInsights: {
       currencies: [],
@@ -216,6 +221,9 @@ window.clearAll = function () {
         accountTypes: [],
         classes: [],
         regions: []
+      },
+      rebalanceDrifts: {
+        persons: []
       },
       etfInsights: {
         currencies: [],

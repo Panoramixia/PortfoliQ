@@ -47,7 +47,7 @@ Crud.Registry.register("assetAllocations", {
         portfolio.assetClasses.map(c => ({
           value: c.key,
           label: Helpers.getLocalized(c)
-          })),
+         })),
       display: aa => {
         const c = portfolio.assetClasses.find(x => x.key === aa.class);
         return c ? Helpers.getLocalized(c) : "";
@@ -62,12 +62,12 @@ Crud.Registry.register("assetAllocations", {
       required: true,
       options: () =>
         portfolio.assetRegions.map(r => ({
-          label: r.code,
-          value: r.key
+          value: r.code,
+		  label: Helpers.getLocalized(r)
         })),
       display: aa => {
         const r = portfolio.assetRegions.find(x => x.key === aa.region);
-        return r ? r.code : "";
+        return r ? Helpers.getLocalized(r) : "";
       }
     },
 

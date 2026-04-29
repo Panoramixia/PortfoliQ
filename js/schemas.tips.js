@@ -8,10 +8,9 @@ Crud.Registry.register("tips", {
   // Key = module + "_" + order
   makeKey(values) {
     const mod = values.module?.trim();
-    const fld = values.field.trim().toUpperCase().replace(/\s+/g, "_");
-    const code = values.code?.toString().trim();
-    if (!mod || !fld || !code) return "";
-    return `${mod}_${fld}_${code}`;
+    const seq = values.sequence?.toString().trim();
+    if (!mod || !seq) return "";
+    return `${mod}_${seq}`;
   },
 
   getCollection: () => portfolio.tips,
@@ -32,21 +31,12 @@ Crud.Registry.register("tips", {
     },
 
     {
-      key: "field",
-      type: "text",
-      classBase: "field",
+      key: "sequence",
+      type: "number",
+      classBase: "sequence",
       showKey: true,
       required: true,
-      display: row => row.field
-    },
-
-    {
-      key: "code",
-      type: "text",
-      classBase: "code",
-      showKey: true,
-      required: true,
-      display: t => t.code
+      display: w => w.sequence
     },
 
     {
@@ -67,16 +57,14 @@ Crud.Registry.register("tips", {
   ],
 
   validate(values) {
-    if (!values.module || !values.field || !values.code) return false;
+    if (!values.module || !values.sequence) return false;
+
+    if (!Number.isInteger(Number(values.sequence))) return false;
 
     return true;
   },
 
   transform(values) {
-    if (values.field) { 
-      values.field = values.field.trim().toUpperCase().replace(/\s+/g, "_"); 
-    }
-
     // Assign composite key
     if (!values.key) {
       values.key = this.makeKey(values);

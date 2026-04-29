@@ -68,6 +68,14 @@ Crud.Registry.register("markets", {
     return true;
   },
 
+  // Composite key: asset ^ date
+  makeKey(values) {
+    const asset = values.asset || "";
+    const date = values.date?.trim() || "";
+
+    return `${asset}^${date}`;
+  },
+  
   // ------------------------------------------------------------
   // FIELDS
   // ------------------------------------------------------------
@@ -92,27 +100,32 @@ Crud.Registry.register("markets", {
           value: h.key,
           label: h.code
         })),
-      display: m => Helpers.getAssetCodeByKey(m.asset)
+      display: m => {
+        const h = portfolio.assets.find(h => h.key === m.asset);
+        return h ? h.code : "";
+      }
     },
 
     {
       key: "price",
       type: "number",
       classBase: "price",
+      showKey: true,
       required: true,
       min: 0,
-      display: m => {
-        const price = Number(m.price);
-        if (isNaN(price)) return "";
-        return price.toFixed(8).replace(/\.?0+$/, "");
-      }
+      step: "0.00000001",
+      display: m => m.price
     },
+
 
     {
       key: "currency",
       type: "custom",
       classBase: "currency",
       display: (m, mode) => {
+        if (mode === "new") {
+          return Helpers.DOM.create("span", { class: "new-currency" }, [""]);
+        }
         const asset = portfolio.assets.find(h => h.key === m.asset);
         const currency = asset
           ? portfolio.currencies.find(c => c.key === asset.currency)
@@ -120,9 +133,7 @@ Crud.Registry.register("markets", {
 
         const text = currency ? `${currency.symbol} (${currency.code})` : "";
 
-        let cls = "currency";
-        if (mode === "edit") cls = "edit-currency";
-        if (mode === "new") cls = "new-currency";
+        const cls = mode === "edit" ? "edit-currency" : "currency";
 
         return Helpers.DOM.create("span", { class: cls }, [text]);
       }
@@ -135,12 +146,9 @@ Crud.Registry.register("markets", {
   validate(values) {
     if (!values.date || !values.asset) return false;
 
-    let price;
-    try {
-      price = new Decimal(values.price);
-    } catch {
-      return false;
-    }
+    const price = parseFloat(values.price);
+    if (isNaN(price)) return false;
+
 
     if (price.isNegative()) return false;
 
@@ -151,9 +159,13 @@ Crud.Registry.register("markets", {
   // TRANSFORM
   // ------------------------------------------------------------
   transform(values) {
-    values.key = `${values.asset}^${values.date}`;
-    const dPrice = new Decimal(values.price || 0);
-    values.price = dPrice.toDecimalPlaces(8).toNumber();
+    // Only assign key if it's a NEW transaction
+    if (!values.key) {
+      values.key = this.makeKey(values);
+    }
+
+    values.price = parseFloat(values.price);
+
     return values;
   },
 

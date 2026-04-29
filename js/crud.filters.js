@@ -94,6 +94,10 @@ window.Crud.Filters = {
 
         saveToStorage();
         Crud.Core.renderModule(moduleName);
+        // If this filter affects other modules, refresh them too
+        if (moduleName === "rebalanceDrifts") {
+          Crud.Core.renderModule("rebalanceRules");
+        }
       };
     });
   }

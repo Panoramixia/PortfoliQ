@@ -82,7 +82,7 @@ Crud.Registry.register("websites", {
     if (!values.module || !values.sequence) return false;
 
     if (!Number.isInteger(Number(values.sequence))) return false;
-    
+
     // Validate URLs if provided
     for (const lang of ["fr", "en"]) {
       const url = values[lang];
