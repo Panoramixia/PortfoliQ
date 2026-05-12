@@ -11,7 +11,7 @@ Crud.Registry.register("etfRelations", {
 
   // Composite key: parentKey^childKey
   makeKey(values) {
-    return `${values.parent}^${values.child}`;
+    return `${values.parent_etf}^${values.child_etf}`;
   },
 
   getCollection: () => portfolio.etfRelations,
@@ -68,7 +68,7 @@ Crud.Registry.register("etfRelations", {
 
   validate(values) {
     // prevent parent = child
-    if (values.parent_etf === values.child) {
+    if (values.parent_etf === values.child_etf) {
       return t("etf_relation_both_same");
     }
 
